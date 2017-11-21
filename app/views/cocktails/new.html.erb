@@ -1,0 +1,16 @@
+<%= simple_form_for @cocktail do |f| %>
+
+  <%= f.input :name %>
+  <%= f.button :submit %>
+
+  <% if @cocktail.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+    <% @cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
+

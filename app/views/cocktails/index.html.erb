@@ -1,0 +1,16 @@
+<div class="container">
+  <h1> NOS MEILLEURS COCKTAILS </h1>
+  <a><%= link_to " Add a cocktail ", new_cocktail_path, class: 'btn btn-primary'%></a>
+  <div class="row">
+   <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://cde.peru.com//ima/0/1/7/1/1/1711304/611x458/machu-picchu.jpg');">
+        <div class="card-category"><%= cocktail.name.capitalize %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+

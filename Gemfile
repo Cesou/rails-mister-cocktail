@@ -48,6 +48,10 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rspec-rails', group: [ :test ]
-gem 'rails-controller-testing', group: [ :test ]
+gem 'tzinfo-data'
+gem 'rspec-rails'
+gem 'rails-controller-testing'
+gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'autoprefixer-rails'
