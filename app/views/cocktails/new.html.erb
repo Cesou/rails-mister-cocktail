@@ -1,7 +1,5 @@
-<%= simple_form_for @cocktail do |f| %>
 
-  <%= f.input :name %>
-  <%= f.button :submit %>
+  <%= render 'form' %>
 
   <% if @cocktail.errors.any? %>
     <div id="error_explanation">
@@ -12,5 +10,5 @@
       </ul>
     </div>
   <% end %>
-<% end %>
+
 
